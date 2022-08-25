@@ -1,0 +1,23 @@
+package springcore.constructorInjector;
+
+import java.util.Map;
+
+public class Pirates {
+	private String shipname;
+	private int arc;
+	private Captain captain;
+	private Map<String ,String> emperor;
+	public Pirates(String shipname, int arc, Captain captain, Map<String, String> emperor) {
+		super();
+		this.shipname = shipname;
+		this.arc = arc;
+		this.captain = captain;
+		this.emperor = emperor;
+	}
+	@Override
+	public String toString() {
+		return " [shipname=" + shipname + ", arc=" + arc + ", captain=" + this.captain.getName() + ", emperor=" + emperor + "]";
+	}
+	
+
+}
