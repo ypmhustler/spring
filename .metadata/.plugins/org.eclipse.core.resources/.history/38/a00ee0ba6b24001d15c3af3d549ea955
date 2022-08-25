@@ -1,0 +1,6 @@
+package springcore.ref;
+
+public class B {
+	private int y;
+
+}
