@@ -12,7 +12,7 @@ public class App
         Student s1=(Student) context.getBean("student1");
         Student s2=(Student) context.getBean("student2");
         Student s3=(Student) context.getBean("student3");
-        System.out.println(s1+"\n" +s2 +"\n"+s3);
+        System.out.println(s1+"/n" +s2 +"/n"+s3);
         
     }
 }

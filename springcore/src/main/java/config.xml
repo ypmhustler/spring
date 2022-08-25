@@ -9,11 +9,19 @@
 			<value>naruto</value>
 		</property>
 		<property name="studentId">
-			<value>1</value>
+			<value>7</value>
 		</property>
 		<property name="city">
 			<value>konaha</value>
 		</property>
 		
 	</bean>
+	<bean class="springcore.Student" name="student2">
+		<property name="studentName" value="sasuke" />
+		<property name="studentId" value="7"/>
+		<property name="city" value="konaha" />
+	</bean>
+	<bean class="springcore.Student" name="student3" p:studentName="sakura" p:studentId="7" p:city="konaha">
+	</bean>
+	
 </beans>
