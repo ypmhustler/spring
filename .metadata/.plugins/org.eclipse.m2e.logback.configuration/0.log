@@ -425,3 +425,11 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springfra
 2022-08-25 19:20:20,717 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ypmhu\Desktop\Spring\springcore\src\main\resources
 2022-08-25 19:20:20,718 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-08-25 19:20:20,718 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ypmhu\Desktop\Spring\springcore\src\test\resources
+2022-08-25 20:37:32,833 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-25 20:37:32,835 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ypmhu\Desktop\Spring\springcore\src\main\resources
+2022-08-25 20:37:32,836 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-25 20:37:32,836 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ypmhu\Desktop\Spring\springcore\src\test\resources
+2022-08-25 20:37:36,379 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-25 20:37:36,380 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ypmhu\Desktop\Spring\springcore\src\main\resources
+2022-08-25 20:37:36,382 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-25 20:37:36,382 [Worker-52: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ypmhu\Desktop\Spring\springcore\src\test\resources

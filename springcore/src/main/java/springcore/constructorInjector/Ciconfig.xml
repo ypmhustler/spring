@@ -11,7 +11,7 @@
 		</constructor-arg>
 		
 	</bean>
-	<bean class="springcore.constructorInjector.Pirates" name="pirates" c:arc="12">
+	<bean class="springcore.constructorInjector.Pirates" name="pirates" c:arc="12" init-method="init" destroy-method="destroy">
 		<constructor-arg name="shipname"  value="MobyDick"/>
 		<constructor-arg name="captain" ref="capt" />
 		<constructor-arg name="emperor">
