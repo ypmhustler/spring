@@ -1,0 +1,30 @@
+package springcore.autowire;
+
+public class Jinchuriki {
+	private TailedBeast tailedbeast;
+
+	public TailedBeast getTailedbeast() {
+		return tailedbeast;
+	}
+
+	public void setTailedbeast(TailedBeast tailedbeast) {
+		this.tailedbeast = tailedbeast;
+	}
+
+	public Jinchuriki(TailedBeast tailedbeast) {
+		super();
+		this.tailedbeast = tailedbeast;
+	}
+
+	public Jinchuriki() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public String toString() {
+		return "Jinchuriki [tailedbeast=" + tailedbeast + "]";
+	}
+	
+
+}
