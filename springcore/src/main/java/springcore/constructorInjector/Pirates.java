@@ -15,11 +15,12 @@ public class Pirates {
 		this.captain = captain;
 		this.emperor = emperor;
 	}
+	// using init and destroy method using xml in this class(Pirates)
 	public void init() {
-		System.out.println("inside init method");
+		System.out.println("inside init method using xml");
 	}
 	public void destroy() {
-		System.out.println("inside destroy method");
+		System.out.println("inside destroy method using xml");
 	}
 	public void info() {
 		System.out.println(this.shipname);
