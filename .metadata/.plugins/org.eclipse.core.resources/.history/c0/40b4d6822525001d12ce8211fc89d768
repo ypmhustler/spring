@@ -1,0 +1,38 @@
+package springcore.sterotype;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component("ymir")
+public class Ymir_subjects {
+	@Value("Eren Yager")
+	private String subject;
+
+	public String getSubject() {
+		return subject;
+	}
+
+	public void setSubject(String subject) {
+		this.subject = subject;
+	}
+
+	public Ymir_subjects(String subject) {
+		super();
+		this.subject = subject;
+	}
+
+	public Ymir_subjects() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public String toString() {
+		return "Ymir_subjects [subject=" + subject + "]";
+	}
+	
+	
+	
+	
+}

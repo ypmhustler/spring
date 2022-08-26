@@ -1,0 +1,5 @@
+package springcore.autowire.annotation;
+
+public class TailedBeast {
+
+}
