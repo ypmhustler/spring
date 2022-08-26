@@ -1,7 +1,12 @@
 INDEX VERSION 1.131+C:\Users\ypmhu\Desktop\Spring\.metadata\.plugins\org.eclipse.jdt.core
+<<<<<<< HEAD
 1865797976.index
 1883765122.index
+=======
+1468007358.index
+>>>>>>> autowire_xml
 1936043245.index
+1883765122.index
 4005272610.index
 2345633055.index
 296183753.index
