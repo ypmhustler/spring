@@ -626,3 +626,24 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springfra
 2022-08-26 11:41:49,741 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ypmhu\Desktop\Spring\springcore\src\main\resources
 2022-08-26 11:41:49,742 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-08-26 11:41:49,743 [Worker-34: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ypmhu\Desktop\Spring\springcore\src\test\resources
+2022-08-26 12:01:57,614 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-26 12:01:57,615 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ypmhu\Desktop\Spring\springcore\src\main\resources
+2022-08-26 12:01:57,617 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-26 12:01:57,618 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ypmhu\Desktop\Spring\springcore\src\test\resources
+2022-08-26 12:01:58,635 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-26 12:01:58,637 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ypmhu\Desktop\Spring\springcore\src\main\resources
+2022-08-26 12:01:58,640 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-26 12:01:58,641 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ypmhu\Desktop\Spring\springcore\src\test\resources
+2022-08-26 12:01:59,662 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-26 12:01:59,663 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ypmhu\Desktop\Spring\springcore\src\main\resources
+2022-08-26 12:01:59,666 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-26 12:01:59,666 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ypmhu\Desktop\Spring\springcore\src\test\resources
+2022-08-26 12:04:57,265 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-26 12:04:57,266 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ypmhu\Desktop\Spring\springcore\src\main\resources
+2022-08-26 12:04:57,270 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-08-26 12:04:57,270 [Worker-30: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ypmhu\Desktop\Spring\springcore\src\test\resources
+2022-08-26 12:12:24,109 [Stop Help Server] INFO  org.eclipse.jetty.server.Server - Stopped Server@59142834{STOPPING}[10.0.6,sto=0]
+2022-08-26 12:12:24,154 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@27bf3a15{HTTP/1.1, (http/1.1)}{127.0.0.1:0}
+2022-08-26 12:12:24,196 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@4403e453{/help,null,STOPPED}
+2022-08-26 12:13:21,524 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-08-26 12:13:23,786 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Updating Gradle version information cache failed. Using outdated cache.
