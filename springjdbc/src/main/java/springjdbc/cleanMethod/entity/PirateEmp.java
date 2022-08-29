@@ -2,6 +2,7 @@ package springjdbc.cleanMethod.entity;
 
 import org.springframework.stereotype.Component;
 
+@Component
 public class PirateEmp {
 	public PirateEmp() {
 		super();
