@@ -3958,3 +3958,4 @@ Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.apache
 2022-08-30 12:13:35,513 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ypmhu\Desktop\Spring\springmvc\src\test\resources
 2022-08-30 13:15:10,091 [Stop Help Server] INFO  org.eclipse.jetty.server.Server - Stopped Server@2a016dc4{STOPPING}[10.0.6,sto=0]
 2022-08-30 13:15:11,936 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@59011a4a{HTTP/1.1, (http/1.1)}{127.0.0.1:0}
+2022-08-30 13:15:12,987 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@ad9a51b{/help,null,STOPPED}
