@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%@page isELIgnored="false" %>
 <!doctype html>
 <html lang="en">
 <head>
@@ -15,24 +16,26 @@
 	crossorigin="anonymous">
 
 <title>PirateKing Challenge Tournament</title>
+<h1>${info}</h1>
+<h2>${desc} </h2>
 </head>
 <body>
 	<div class="container mt-5">
 		<h3>Registration form for challenging Pirate king</h3>
-		<form action="/processform" method="post">
+		<form action="processform" method="post">
 			<div class="form-group">
 				<label for="exampleInputUsername">User Name</label> <input
 					type="text" class="form-control" id="exampleInputUserName"
-					aria-describedby="UserNameHelp" placeholder="Provide your user name"> 
+					aria-describedby="UserNameHelp" name="userName" placeholder="Provide your user name"> 
 			</div>
 			<div class="form-group">
 				<label for="exampleInputEmail1">Email address</label> <input
 					type="email" class="form-control" id="exampleInputEmail1"
-					aria-describedby="emailHelp" placeholder="Enter email"> 
+					aria-describedby="emailHelp" name="email" placeholder="Enter email"> 
 			</div>
 			<div class="form-group">
 				<label for="exampleInputPassword1">Password</label> <input
-					type="password" class="form-control" id="exampleInputPassword1"
+					type="password" class="form-control" name="userpass" id="exampleInputPassword1"
 					placeholder="Password">
 			</div>
 			<div class="container text-center">
