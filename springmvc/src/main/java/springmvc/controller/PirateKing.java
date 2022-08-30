@@ -2,6 +2,9 @@ package springmvc.controller;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -9,10 +12,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.google.protobuf.Service;
+
+import springmvc.dao.UserDao;
 import springmvc.entity.User;
+import springmvc.service.Service1;
 
 @Controller
 public class PirateKing {
+
 	
 	
 	@ModelAttribute
@@ -20,6 +28,7 @@ public class PirateKing {
 		m.addAttribute("info", "This challenge requires sannin level rank card");
 		m.addAttribute("desc", "currrent winner is Master Jiraya");
 	}
+	
 	
 	@RequestMapping("/pirate")
 	public String Registation() {
@@ -58,6 +67,9 @@ public class PirateKing {
 	
 	@RequestMapping(path="/processform",method=RequestMethod.POST)
 	public String handler(@ModelAttribute User user,Model model) {
+		ApplicationContext context=new AnnotationConfigApplicationContext(Service1.class);
+		UserDao userDao=(UserDao) context.getBean("userdao");
+		userDao.insert(user);
 		return "formAccept";
 		
 	}

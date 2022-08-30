@@ -9,6 +9,8 @@ import springjdbc.cleanMethod.entity.PirateEmp;
 
 public class RowMapperImpl implements RowMapper<PirateEmp > {
 
+	
+	// row mapper is used for select query
 	public PirateEmp mapRow(ResultSet rs, int rowNum) throws SQLException {
 		PirateEmp pe= new PirateEmp();
 		pe.setName(rs.getString(1));
