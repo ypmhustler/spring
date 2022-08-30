@@ -46,4 +46,5 @@
     <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
     <fullyQualifiedTypeName name="com.google.protobuf.Service"/>
     <fullyQualifiedTypeName name="springmvc.service.Service1"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
 </qualifiedTypeNameHistroy>

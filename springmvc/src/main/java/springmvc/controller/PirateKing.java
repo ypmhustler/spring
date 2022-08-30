@@ -67,10 +67,18 @@ public class PirateKing {
 	
 	@RequestMapping(path="/processform",method=RequestMethod.POST)
 	public String handler(@ModelAttribute User user,Model model) {
-		ApplicationContext context=new AnnotationConfigApplicationContext(Service1.class);
-		UserDao userDao=(UserDao) context.getBean("userdao");
-		userDao.insert(user);
-		return "formAccept";
+		if(user.getUserName().isBlank() || user.getUserpass().isBlank() || user.getEmail().isBlank() ) {
+			System.out.println("redirect block");
+			
+			return "redirect:/pirate";
+		}
+		else {
+			//ApplicationContext context=new AnnotationConfigApplicationContext(Service1.class);
+			//UserDao userDao=(UserDao) context.getBean("userdao");
+			//userDao.insert(user);
+			return "formAccept";
+		}
+		
 		
 	}
 		

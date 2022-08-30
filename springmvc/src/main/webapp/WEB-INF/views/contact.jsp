@@ -1,6 +1,8 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@page isELIgnored="false" %>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -15,11 +17,15 @@
 	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 	crossorigin="anonymous">
 
+<link  rel="stylesheet" type="text/css" href="<c:url value="/resource/css/style.css" />" >
+<script src="<c:url value="/resource/js/demo.js"  />" ></script>
 <title>PirateKing Challenge Tournament</title>
 <h1>${info}</h1>
 <h2>${desc} </h2>
 </head>
 <body>
+<
+<img alt="naruto image" src="<c:url value="/resource/image/img.jpg" />">
 	<div class="container mt-5">
 		<h3>Registration form for challenging Pirate king</h3>
 		<form action="processform" method="post">
