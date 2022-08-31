@@ -24,8 +24,11 @@
 <h2>${desc} </h2>
 </head>
 <body>
-<
+
 <img alt="naruto image" src="<c:url value="/resource/image/img.jpg" />">
+	<div class="container mt-4" style="text-align:right"> 
+	 	<b><a href="signin" style="font-size:2vw"> Sign In</a></b>
+	</div>
 	<div class="container mt-5">
 		<h3>Registration form for challenging Pirate king</h3>
 		<form action="processform" method="post">

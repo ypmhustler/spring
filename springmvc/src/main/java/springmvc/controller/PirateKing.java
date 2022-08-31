@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.google.protobuf.Service;
 
 import springmvc.dao.UserDao;
+import springmvc.entity.Login;
 import springmvc.entity.User;
 import springmvc.service.Service1;
 
@@ -35,7 +36,30 @@ public class PirateKing {
 		return "contact";
 		
 	}
-	
+	@RequestMapping(path="/signin")
+	public String Signin() {
+		return "SignIn";
+		
+	}
+	@RequestMapping(path="/loginprocess",method=RequestMethod.POST)
+	public String loginprocess(@ModelAttribute Login login ,Model m) {
+		ApplicationContext context=new AnnotationConfigApplicationContext(Service1.class);
+		UserDao userDao=(UserDao) context.getBean("userdao");
+		userDao.search(login);
+		Login log=userDao.search(login);
+		if((log.getUseremail().equals(login.getUseremail())) && (log.getPassword().equals(login.getPassword()))) {
+			m.addAttribute("mail", log.getUseremail());
+			m.addAttribute("pass", log.getPassword());
+			m.addAttribute("name", log.getUserName());
+			return "profile";
+		}
+		else {
+		System.out.println("else block");
+			return "NotAutorize";
+		}
+		
+		
+	}
 /*	
     // this method(Approach-1) is old and reqires a lot of codding we can use diiferent appraoch which requires less coding 
     
@@ -73,9 +97,9 @@ public class PirateKing {
 			return "redirect:/pirate";
 		}
 		else {
-			//ApplicationContext context=new AnnotationConfigApplicationContext(Service1.class);
-			//UserDao userDao=(UserDao) context.getBean("userdao");
-			//userDao.insert(user);
+			ApplicationContext context=new AnnotationConfigApplicationContext(Service1.class);
+			UserDao userDao=(UserDao) context.getBean("userdao");
+			userDao.insert(user);
 			return "formAccept";
 		}
 		
