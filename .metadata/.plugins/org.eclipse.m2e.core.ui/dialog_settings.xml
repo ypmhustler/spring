@@ -26,6 +26,7 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="springorm"/>
 			<item value="springmvc"/>
 			<item value="springjdbc"/>
 			<item value="springcore"/>
@@ -36,6 +37,7 @@
 			<item value="com.springcore"/>
 		</list>
 		<list key="artifactId">
+			<item value="springorm"/>
 			<item value="springmvc"/>
 			<item value="springjdbc"/>
 			<item value="springcore"/>
