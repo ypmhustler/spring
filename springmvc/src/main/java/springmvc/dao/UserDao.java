@@ -1,10 +1,12 @@
 package springmvc.dao;
 
+import java.sql.SQLException;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
-
 import springmvc.entity.Login;
 import springmvc.entity.User;
 
@@ -47,9 +49,9 @@ public class UserDao {
 		int res=this.jdbcTemplate.update(query,user.getEmail(),user.getUserName(),user.getUserpass());
 		System.out.println(res);
 	}
-	public Login search(Login login) {
+	public Login search(Login login)  {
 		String query="select * from ninja where email="+"'"+login.getUseremail()+"'"+" and userpass="+"'"+login.getPassword()+"';";
-		System.out.println(query);
+		//System.out.println(query);
 		try {
 			Login l=this.jdbcTemplate.queryForObject(query,new RowMapperImpl());
 			return l;
@@ -62,6 +64,13 @@ public class UserDao {
 			return lo;
 		}
 		
+		
+		
+	}
+	public List<User> getAlluser() {
+		String query="select * from ninja;";
+		List<User> user=this.jdbcTemplate.query(query, new RowMapperUser());
+		return user;
 	}
 	
 }

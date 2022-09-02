@@ -7,6 +7,7 @@ import org.springframework.jdbc.core.RowMapper;
 
 
 import springmvc.entity.Login;
+import springmvc.entity.User;
 
 public class RowMapperImpl implements RowMapper<Login > {
 
@@ -19,5 +20,6 @@ public class RowMapperImpl implements RowMapper<Login > {
 		pe.setUserName(rs.getString(2));
 		return pe;
 	}
+	
 
 }
